@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start relative">
         <Image
           className="dark:invert"
           src="https://nextjs.org/icons/next.svg"
@@ -47,6 +47,16 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+
+        <div className="relative w-full">
+          <iframe
+            src="https://www.youtube.com/embed/qkIH2x0dnA4"
+            title="Horizon Video"
+            className="w-full max-w-4xl mx-auto aspect-video rounded-md shadow-lg border"
+            allowFullScreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
