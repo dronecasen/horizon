@@ -45,3 +45,5 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
+// The URL for this page would be: /faq
